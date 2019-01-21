@@ -3,6 +3,19 @@ Resolve an array of promises, one after another but with delays
 
 All notable changes to this project are documented in [CHANGELOG.md](https://github.com/staskolukasz/delayed-promises/blob/master/CHANGELOG.md) file.
 
+## Idea
+
+The main purpose of this library is to delay resolving of succeeding promises:
+
+```
+                 delay                       delay
+|----------|----------------|----------|---------------|...
+
+^                           ^
+Resolve a first promise       Resolve a first promise
+
+```
+
 ## Installation
 
 Run `npm install delayed-promises --save` to install the library.
@@ -30,6 +43,17 @@ An object with data to be used to build each request
 #### options
 An object with configuration properties, implementing following interface:
 
+```typescript
+interface IDefaultOptions {
+  delay: number;
+  delayFirst: boolean;
+  createPromiseFn: () => Promise<any>;
+  extractResponseFn: (response: any) => any;
+  middlewareFn: (response: any) => void;
+  extractErrorFn: (error: any) => any;
+}
+```
+Example of default options:
 ```javascript
 const defaultOptions = {
   delay: 1000,
@@ -70,7 +94,7 @@ delayedPromises(
     'https://httpbin.org/delay/0',
   ],
   {
-    createPromiseFn: data => axios.get(data),
+    createPromiseFn: dataRow => axios.get(dataRow),
     extractResponseFn: response => response.data,
   }
 )
