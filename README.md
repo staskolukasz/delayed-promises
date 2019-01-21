@@ -1,7 +1,7 @@
 # delayed-promises
 Resolve an array of promises, one after another but with delays
 
-All notable changes to this project are documented in [CHANGELOG.md](https://github.com/staskolukasz/ngx-infinite-scroller/blob/master/CHANGELOG.md) file.
+All notable changes to this project are documented in [CHANGELOG.md](https://github.com/staskolukasz/delayed-promises/blob/master/CHANGELOG.md) file.
 
 ## Installation
 
