@@ -1,6 +1,6 @@
 {
   "name": "delayed-promises",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Resolve an array of promises, one after another but with delays",
   "main": "index.js",
   "author": "Łukasz Staśko",
