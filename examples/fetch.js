@@ -16,5 +16,3 @@ delayedPromises(
 .then((results) => {
   console.log(results);
 })
-
-
