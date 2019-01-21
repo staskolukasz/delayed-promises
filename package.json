@@ -1,0 +1,29 @@
+{
+  "name": "delayed-promises",
+  "version": "1.0.0",
+  "description": "Resolve an array of promises, one after another but with delays",
+  "main": "index.js",
+  "author": "Łukasz Staśko",
+  "license": "MIT",
+  "homepage": "https://github.com/staskolukasz/delayed-promises",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/staskolukasz/delayed-promises.git"
+  },
+  "keywords": [
+    "promise",
+    "array",
+    "delay",
+    "pause",
+    "interval",
+    "recursive"
+  ],
+  "scripts": {
+    "example:axios": "node examples/axios.js",
+    "example:fetch": "node examples/fetch.js"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "node-fetch": "^2.3.0"
+  }
+}
