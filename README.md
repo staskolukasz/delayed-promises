@@ -12,7 +12,7 @@ The main purpose of this library is to delay resolving of succeeding promises:
 |----------|----------------|----------|---------------|...
 
 ^                           ^
-Resolve a first promise       Resolve a first promise
+Resolve a first promise       Resolve a second promise
 
 ```
 
