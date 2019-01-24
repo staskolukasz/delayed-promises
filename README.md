@@ -1,5 +1,5 @@
 # delayed-promises
-Resolve an array of promises, one after another but with delays
+Resolve an array of promises, one after another with delays
 
 All notable changes to this project are documented in [CHANGELOG.md](https://github.com/staskolukasz/delayed-promises/blob/master/CHANGELOG.md) file.
 
@@ -41,7 +41,7 @@ delayedPromises(data, options).then(results => ... );
 An object with data to be used to build each request
 
 #### options
-An object with configuration properties, implementing following interface:
+An object with configuration properties, implementing following the interface:
 
 ```typescript
 interface IDefaultOptions {
@@ -74,7 +74,7 @@ const defaultOptions = {
 
 ## Example
 ### Examples to run locally
-Examples with axios or fetch clients can be found in "examples" directory. To run these examples, clone repo and run following commands:
+Examples with Axios or Fetch clients can be found in the "examples" directory. To run these examples, clone repo and run following commands:
 
 ```bash
 npm install
